@@ -1,0 +1,35 @@
+/* Reset y base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; color: #222; background: #fff; }
+a { text-decoration: none; color: inherit; }
+
+/* Header */
+.header { position: fixed; width: 100%; top: 0; background: transparent; padding: 1rem 2rem; z-index: 100; }
+.nav { display: flex; justify-content: space-between; align-items: center; }
+.nav-links { list-style: none; display: flex; gap: 1.5rem; }
+.nav-links a { font-weight: 500; }
+
+/* Hero */
+.hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 2rem; margin-top: 4rem; }
+.hero-img { width: 250px; height: 250px; object-fit: cover; border-radius: 50%; }
+.hero-text h1 { font-size: clamp(2.5rem, 5vw, 4rem); margin: 1rem 0; }
+.hero-text p { font-size: clamp(1.2rem, 2.5vw, 1.6rem); margin-bottom: 2rem; }
+.btn { padding: 0.8rem 2rem; background: #222; color: #fff; border-radius: 6px; transition: background 0.3s ease; }
+.btn:hover { background: #444; }
+
+/* Portfolio */
+.portfolio { padding: 4rem 2rem; text-align: center; }
+.projects { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); max-width: 1200px; margin: 2rem auto; }
+.project-card { box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 1rem; border-radius: 8px; transition: transform 0.3s ease; }
+.project-card:hover { transform: translateY(-5px); }
+.project-card img { width: 100%; border-radius: 6px; }
+
+/* Contacto y Footer */
+.contacto { padding: 3rem 2rem; background: #f9f9f9; text-align: center; }
+.footer { padding: 1rem; text-align: center; font-size: 0.9rem; color: #666; }
+
+/* Responsive */
+@media(max-width: 600px) {
+  .hero-img { width: 200px; height: 200px; }
+  .nav-links { display: none; } /* Podés agregar menú móvil si querés luego */
+}

@@ -1,49 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mi Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Profesional</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1>Hola, soy Juan Pérez</h1>
-      <p>Desarrollador Front‑End y Diseñador UI/UX</p>
-      <a href="#proyectos" class="btn">Ver proyectos</a>
+  <header class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">Juan Pérez</h1>
+      <nav id="nav" class="nav">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="controls">
+        <button id="darkToggle" class="btn-toggle" aria-label="Modo oscuro">🌙</button>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú">☰</button>
+      </div>
     </div>
   </header>
 
-  <section id="sobre-mi" class="about container">
-    <h2>Sobre mí</h2>
-    <p>Apasionado por construir experiencias digitales limpias, accesibles y con impacto.</p>
-  </section>
-
-  <section id="proyectos" class="projects container">
-    <h2>Proyectos</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="proyecto1.jpg" alt="Proyecto 1">
-        <div class="card-info">
-          <h3>Proyecto Uno</h3>
-          <p>Descripción breve del proyecto.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="proyecto2.jpg" alt="Proyecto 2">
-        <div class="card-info">
-          <h3>Proyecto Dos</h3>
-          <p>Descripción breve del proyecto.</p>
-        </div>
-      </div>
-      <!-- Añade más tarjetas según necesites -->
+  <section class="hero fade-in">
+    <div class="container">
+      <h2>Hola, soy Juan Pérez</h2>
+      <p>Desarrollador Front-End y Diseñador UI/UX</p>
+      <a href="#proyectos" class="btn">Ver proyectos</a>
     </div>
   </section>
 
-  <section id="contacto" class="contact container">
+  <section id="sobre-mi" class="about container fade-in">
+    <h2>Sobre mí</h2>
+    <p>Apasionado por crear experiencias web limpias, accesibles y modernas.</p>
+  </section>
+
+  <section id="proyectos" class="projects container fade-in">
+    <h2>Proyectos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="proyecto1.jpg" alt="Proyecto 1">
+        <div class="card-info">
+          <h3>Proyecto Uno</h3>
+          <p>Diseño y desarrollo de landing page para empresa de tecnología.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="proyecto2.jpg" alt="Proyecto 2">
+        <div class="card-info">
+          <h3>Proyecto Dos</h3>
+          <p>App web con sistema de reservas y autenticación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact container fade-in">
     <h2>Contacto</h2>
-    <p>Puedes escribirme a <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
+    <p>Podés escribirme a <a href="mailto:juan@example.com">juan@example.com</a></p>
   </section>
 
   <footer class="footer">
@@ -51,5 +65,7 @@
       © 2025 Juan Pérez — Todos los derechos reservados.
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

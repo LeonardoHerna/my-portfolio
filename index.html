@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio Profesional</title>
+  <!-- Estilos principales -->
   <link rel="stylesheet" href="styles.css"/>
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header class="navbar">
@@ -22,21 +25,39 @@
     </div>
   </header>
 
-  <section class="hero fade-in">
-    <div class="container">
+<section class="hero hero-with-image fade-in">
+  <div class="container hero-content">
+    <div class="hero-text">
       <h2>Hola, soy Leonardo Hernandez</h2>
-      <p>Desarrollador Front-End y Backend</p>
-      
-
-      <a href="#proyectos" class="btn">Ver proyectos</a>
-      
+      <p>Desarrollador Front‑End & Backend con enfoque en proyectos modernos, accesibles y eficientes.</p>
+      <a href="#proyectos" class="btn btn-hero">Ver proyectos</a>
     </div>
-  </section>
+    <div class="hero-image">
+      <img src="imagenes/perfil_files/perfil3.webp" alt="Leonardo trabajando" />
+
+  </div>
+</section>
 
 
+  <!-- Sección sobre mí -->
   <section id="sobre-mi" class="about container fade-in">
     <h2>Sobre mí</h2>
-    <p>Apasionado por crear experiencias web limpias, accesibles y modernas.</p>
+    <div class="about-content">
+      <img src="imagenes/perfil_files/perfil.jpg" alt="Foto de perfil" class="about-photo">
+      <div class="about-text">
+        <p>Hola, soy Leonardo. Desarrollador frontend enfocado en construir interfaces <strong>modernas, accesibles y responsivas</strong>.</p>
+        <p>Trabajo con tecnologías como <strong>HTML, CSS, JavaScript</strong>, y aplico <strong>inteligencia artificial</strong> (como ChatGPT y GitHub Copilot) para aumentar la productividad y creatividad en cada proyecto.</p>
+        <p>Mi objetivo es ofrecer soluciones digitales eficientes que mejoren la experiencia del usuario en cualquier dispositivo.</p>
+        <ul class="skills-list">
+          <li><i class="fas fa-code"></i> HTML5, CSS3, JavaScript</li>
+          <li><i class="fas fa-mobile-alt"></i> Diseño responsivo</li>
+          <li><i class="fas fa-universal-access"></i> Accesibilidad web</li>
+          <li><i class="fas fa-robot"></i> IA aplicada al desarrollo</li>
+          <li><i class="fas fa-code-branch"></i> Git & GitHub</li>
+        </ul>
+        <a href="" target="_blank" class="btn-descarga">📄 Descargar CV</a>
+      </div>
+    </div>
   </section>
 
   <section id="proyectos" class="projects container fade-in">
@@ -47,6 +68,7 @@
         <div class="card-info">
           <h3>Proyecto Uno</h3>
           <p>Diseño de landing page para Alexa Detailing</p>
+          <a href="https://leonardoherna.github.io/alexa-car-detailing/" target="_blank" class="btn-a-verProyecto">Ver proyecto</a>
         </div>
       </div>
       <div class="card">
@@ -54,6 +76,7 @@
         <div class="card-info">
           <h3>Proyecto Dos</h3>
           <p>Landing para Luna ropa Urbana</p>
+          <a href="https://leonardoherna.github.io/luna-ropa-urbana/" target="_blank" class="btn-a-verProyecto">Ver proyecto</a>
         </div>
       </div>
     </div>
@@ -62,10 +85,15 @@
   <section id="contacto" class="contact container fade-in">
     <h2>Contacto</h2>
     <p>Podés escribirme a <a href="mailto:leonardohernanes307@gmail.com">leonardohernanes307@gmail.com</a></p>
-        <a href="https://wa.me/59897431589" class="whatsapp-btn" target="_blank">
-  <i class="fab fa-whatsapp whatsapp-btn "></i> O podes Contactarme por whatsapp.
-</a>
-
+    <a href="https://wa.me/59897431589" class="whatsapp-btn" target="_blank">
+      <i class="fab fa-whatsapp"></i> Podés contactarme por WhatsApp
+    </a>
+      <p>
+  Seguime:
+  <a href="https://www.instagram.com/leonardo.hernandezbentancor.9/" target="_blank">
+    <i class="fab fa-instagram"></i> @LeonardoHernandezBentancor
+  </a>
+</p>
   </section>
 
   <footer class="footer">

@@ -1,0 +1,45 @@
+/* Tipografía y reset básico */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; color:#333; line-height:1.6; }
+.container { width:90%; max-width:1000px; margin:0 auto; padding:2rem 0; }
+
+/* Hero de bienvenida */
+.hero {
+  display:flex; align-items:center; justify-content:center;
+  height:100vh; background:#f5f5f5; text-align:center;
+}
+.hero h1 { font-size:2.5rem; margin-bottom:0.5rem; }
+.hero p { font-size:1.2rem; margin-bottom:1.5rem; }
+.hero .btn {
+  display:inline-block; padding:0.75rem 1.5rem;
+  background:#0066cc; color:#fff; text-decoration:none;
+  border-radius:4px;
+}
+
+/* Sección Sobre mí */
+.about h2 { font-size:2rem; margin-bottom:1rem; }
+.about p { font-size:1rem; }
+
+/* Sección proyectos (grid responsive) */
+.projects h2 { font-size:2rem; margin-bottom:1rem; }
+.projects .grid {
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+  gap:1.5rem;
+}
+.card {
+  border:1px solid #ddd; border-radius:6px;
+  overflow:hidden; transition:transform .3s;
+}
+.card:hover { transform:translateY(-5px); }
+.card img { width:100%; display:block; }
+.card-info { padding:1rem; }
+.card-info h3 { margin-bottom:0.5rem; }
+.card-info p { font-size:0.95rem; }
+
+/* Sección contacto */
+.contact h2 { font-size:2rem; margin-bottom:1rem; }
+.contact p a { color:#0066cc; text-decoration:none; }
+
+/* Footer */
+.footer { background:#eaeaea; text-align:center; padding:1rem 0; font-size:0.9rem; }
+

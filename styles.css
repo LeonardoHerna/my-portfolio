@@ -145,6 +145,10 @@ section h2 {
   padding: 1rem;
 }
 
+whatsapp-btn{
+  padding-left: 20px;
+}
+
 /* Footer */
 .footer {
   background: var(--footer-bg);

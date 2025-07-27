@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Mi Portafolio · Tu Nombre</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
- <header class="header">
-  <nav class="nav">
-    <a href="#" class="logo">TuMarca</a>
-    <ul class="nav-links">
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
-
-<section class="hero">
-  <img src="ruta-imagen-central.jpg" alt="Tu imagen principal" class="hero-img" />
-  <div class="hero-texto">
-    <h1>Tu Nombre o Marca</h1>
-    <p>Landing pages / Web dev freelance</p>
-    <a href="#portfolio" class="btn">Ver Proyectos</a>
-  </div>
-</section>
-
-<section id="portfolio" class="portfolio">
-  <h2>Proyectos Destacados</h2>
-  <div class="projects">
-    <!-- Cards de proyectos -->
-    <div class="project-card">
-      <img src="demo1.jpg" alt="Landing Luna Ropa Urbana">
-      <h3>Luna Ropa Urbana</h3>
-      <a href="https://url-demo" class="btn small">Ver demo</a>
+  <header class="hero">
+    <div class="container">
+      <h1>Hola, soy Juan Pérez</h1>
+      <p>Desarrollador Front‑End y Diseñador UI/UX</p>
+      <a href="#proyectos" class="btn">Ver proyectos</a>
     </div>
-    <!-- Repetir card según cantidad -->
-  </div>
-</section>
+  </header>
 
-<section id="contacto" class="contacto">
-  <h2>Contacto</h2>
-  <p>¿Querés una landing profesional? <a href="https://wa.me/598…">Hablame por WhatsApp</a></p>
-</section>
+  <section id="sobre-mi" class="about container">
+    <h2>Sobre mí</h2>
+    <p>Apasionado por construir experiencias digitales limpias, accesibles y con impacto.</p>
+  </section>
 
-<footer class="footer">
-  <p>&copy; 2025 Tu Marca. Todos los derechos reservados.</p>
-</footer>
+  <section id="proyectos" class="projects container">
+    <h2>Proyectos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="proyecto1.jpg" alt="Proyecto 1">
+        <div class="card-info">
+          <h3>Proyecto Uno</h3>
+          <p>Descripción breve del proyecto.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="proyecto2.jpg" alt="Proyecto 2">
+        <div class="card-info">
+          <h3>Proyecto Dos</h3>
+          <p>Descripción breve del proyecto.</p>
+        </div>
+      </div>
+      <!-- Añade más tarjetas según necesites -->
+    </div>
+  </section>
 
+  <section id="contacto" class="contact container">
+    <h2>Contacto</h2>
+    <p>Puedes escribirme a <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      © 2025 Juan Pérez — Todos los derechos reservados.
+    </div>
+  </footer>
 </body>
 </html>

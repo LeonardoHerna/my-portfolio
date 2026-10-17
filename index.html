@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Metadatos, fuentes y estilos principales -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b1020">
+    <meta name="description" content="Leonardo Hernandez — Desarrollador Full Stack">
+    <title>Leonardo Hernandez | Desarrollador Full Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Acceso rápido y navegación principal -->
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="site-header">
+      <a class="logo" href="#top">&lt; Leonardo Hernandez /&gt;</a>
+      <nav>
+        <a href="#proyectos">/proyectos</a>
+        <a href="#stack">/stack</a>
+        <a href="#sobre-mi">/sobre-mi</a>
+        <a href="#contacto">/contacto</a>
+      </nav>
+      <span class="header-status"><i></i> DISPONIBLE PARA PROYECTOS</span>
+    </header>
+    <main id="main">
+      <!-- Escena fija de scroll y tarjetas del portfolio -->
+      <section class="journey" id="top" aria-label="Portfolio de Leonardo Hernandez">
+        <div class="stage" id="stage">
+          <canvas id="three-scene" aria-hidden="true"></canvas>
+          <div class="vignette">
+          </div>
+          <div class="axis-label">
+            CAMERA ROLL<span id="roll-value">000°</span>
+          </div>
+          <div class="cards" id="cards">
+            <!-- Presentación y foto de perfil -->
+            <article class="story-card hero-card">
+              <div class="card-top">
+                <span class="code-label">// DESARROLLADOR FULL STACK</span>
+                <span class="number">01 — 05</span>
+              </div>
+              <div class="hero-content">
+                <div>
+                
+                  <h1>
+                    Construyo software web que <em>funciona</em> y se ve bien.
+                  </h1>
+                  <p class="lead">
+                    Del diseño de la interfaz a la API y la base de datos: soluciones completas para empresas y emprendimientos.
+                  </p>
+                  <a href="#contacto" class="button">Trabajemos juntos <span>↗</span></a>
+                </div>
+                <div class="portrait">
+                  <img src="imagenes/FotoPerfilLeo.jpg" alt="Leonardo Hernandez, desarrollador Full Stack" fetchpriority="high">
+                  <span class="orbit-tag">DESIGN × CODE</span>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <span>EXPERIENCIAS DIGITALES, DE PRINCIPIO A FIN</span>
+                <span>SCROLL PARA EXPLORAR ↓</span>
+              </div>
+            </article>
+            <!-- Tecnologías y herramientas -->
+            <article class="story-card">
+              <div class="card-top">
+                <span class="code-label">// STACK</span>
+                <span class="number">02 — 05</span>
+              </div>
+              <div class="card-content">
+                <p class="eyebrow">
+                  HERRAMIENTAS PARA CONSTRUIR
+                </p>
+                <h2>
+                  Una base sólida.<br><em>De punta a punta.</em>
+                </h2>
+                <p class="lead">
+                  Trabajo en todo el recorrido: interfaces accesibles, lógica de negocio y datos confiables.
+                </p>
+                <ul class="chips">
+                  <li>
+                    HTML / CSS / JS
+                  </li>
+                  <li>
+                    Java
+                  </li>
+                  <li>
+                    Spring Boot
+                  </li>
+                  <li>
+                    Node.js
+                  </li>
+                  <li>
+                    MySQL
+                  </li>
+                  <li>
+                    MongoDB
+                  </li>
+                  <li>
+                    Git / GitHub
+                  </li>
+                </ul>
+              </div>
+              <div class="card-bottom">
+                <span>FRONTEND · BACKEND · DATABASE</span>
+                <span>02 / 05</span>
+              </div>
+            </article>
+            <!-- Proyectos destacados -->
+            <article class="story-card projects-card" id="proyectos">
+              <div class="card-top">
+                <span class="code-label">// PROYECTOS SELECCIONADOS</span>
+                <span class="number">03 — 05</span>
+              </div>
+              <div class="card-content">
+                <p class="eyebrow">
+                  TRABAJO RECIENTE
+                </p>
+                <h2>
+                  Proyectos con<br><em>propósito.</em>
+                </h2>
+                <div class="project-grid">
+                  <a class="project" href="https://leonardoherna.github.io/Detailing-carCenter/" target="_blank" rel="noopener noreferrer">
+                    <span class="project-index">01 / WEB</span>
+                    <strong>Detailing Car Center</strong>
+                    <span>Landing page para un negocio de detailing automotriz.</span>
+                    <small>HTML · CSS · JAVASCRIPT ↗</small>
+                  </a>
+                  <a class="project" href="https://leonardoherna.github.io/Estilo-zapas/" target="_blank" rel="noopener noreferrer">
+                    <span class="project-index">02 / ECOMMERCE</span>
+                    <strong>Estilo-zapas</strong>
+                    <span>Landing page para una marca de zapatos.</span>
+                    <small>HTML · CSS · JAVASCRIPT ↗</small>
+                  </a>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <span>IDEA → DISEÑO → DESARROLLO</span>
+                <span>03 / 05</span>
+              </div>
+            </article>
+            <!-- Información sobre Leonardo -->
+            <article class="story-card" id="sobre-mi">
+              <div class="card-top">
+                <span class="code-label">// SOBRE MÍ</span>
+                <span class="number">04 — 05</span>
+              </div>
+              <div class="card-content about-content">
+                <p class="eyebrow">
+                  DESARROLLADOR FULL STACK
+                </p>
+                <h2>
+                  Me importa cómo<br>se siente <em>usarlo.</em>
+                </h2>
+                <p class="lead">
+                  Combino diseño claro con ingeniería práctica para que cada producto sea fácil de entender, agradable de usar y confiable en el día a día.
+                </p>
+                <div class="principles">
+                  <span><b>01</b> Interfaces intuitivas</span>
+                  <span><b>02</b> Código mantenible</span>
+                  <span><b>03</b> Soluciones a medida</span>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <span>CLARIDAD EN CADA DETALLE</span>
+                <span>04 / 05</span>
+              </div>
+            </article>
+            <!-- Datos de contacto y redes -->
+            <article class="story-card contact-card" id="contacto">
+              <div class="card-top">
+                <span class="code-label">// CONTACTO</span>
+                <span class="number">05 — 05</span>
+              </div>
+              <div class="card-content">
+                <p class="eyebrow">
+                  ¿TIENES UN PROYECTO EN MENTE?
+                </p>
+                <h2>
+                  Hagamos algo<br><em>que importe.</em>
+                </h2>
+                <p class="lead">
+                  Estoy disponible para nuevos proyectos y colaboraciones. Cuéntame tu idea.
+                </p>
+                <div class="contact-actions">
+                  <a class="button" href="mailto:leonardohernanes307@gmail.com">Enviar email <span>↗</span></a>
+                  <a class="button outline" href="https://wa.me/59897431589" target="_blank" rel="noopener noreferrer">WhatsApp <span>↗</span></a>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <span>© <span id="currentYear"></span> LEONARDO HERNANDEZ</span>
+                <a href="https://www.instagram.com/leonardo.hernandezbentancor.9/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a>
+              </div>
+            </article>
+          </div>
+          <!-- Indicadores de sección y progreso del recorrido -->
+          <div class="navigation">
+            <span class="nav-count" id="nav-count">01 <i>/</i> 05</span>
+            <div class="nav-dots" id="nav-dots">
+            </div>
+            <span class="nav-label">SCROLL / TRACKPAD</span>
+          </div>
+          <div class="scroll-progress">
+            <span id="progress"></span>
+          </div>
+        </div>
+      </section>
+      <div class="scroll-space" aria-hidden="true">
+      </div>
+    </main>
+    <!-- Módulo de animación y navegación con Three.js -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
